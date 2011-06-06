@@ -22,7 +22,4 @@ class python::dev {
     },
   }
 
-  package {"ipython":
-    ensure => present,
-  }
 }
