@@ -38,7 +38,7 @@ class python::mod_python {
       }
       file { "/etc/httpd/mods-available/python.load":
         ensure => present,
-        source => "puppet:///python/httpd/python.load",
+        source => "puppet:///modules/python/httpd/python.load",
         before => Apache::Module["python"],
       }
 
