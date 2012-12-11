@@ -9,7 +9,7 @@ form of virtual resources. Wherever a library is needed you just have to
 write the following lines:
 
     include python::package::simplejson
-    Package <| alias == 'ruby-simplejson' |>
+    Package <| alias == 'python-simplejson' |>
 
 If you prefer pip packages:
 
@@ -20,7 +20,7 @@ If you prefer pip packages:
 Due to a bug (http://projects.puppetlabs.com/issues/4459) resource alias 
 is only usable for require. For example:
 
-    realize Package[pyhton-simplejson]
+    realize Package[python-simplejson]
 
 doesn't work! This is why we use the "spaceship" (collection) operator.
 
