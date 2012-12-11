@@ -1,0 +1,8 @@
+name    'camptocamp-ruby'
+version '0.0.1'
+source 'https://github.com/camptocamp/puppet-ruby'
+author 'DevOps Team / Camptocamp'
+license 'GNU GPLv3'
+summary 'Camptocamp Ruby Module'
+description 'Ruby Module for Puppet'
+project_page 'https://github.com/camptocamp/puppet-ruby'
