@@ -5,4 +5,14 @@ class python::pip {
     ensure => present,
   }
 
+  if $::osfamily == 'RedHat' {
+    file {'/usr/bin/pip':
+      ensure  => 'link',
+      target  => '/usr/bin/pip-python',
+      require => Package['python-pip'],
+    }
+
+    File['/usr/bin/pip'] -> Package <| provider == pip |>
+  }
+
 }
