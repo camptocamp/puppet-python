@@ -11,14 +11,14 @@ Usage:
 */
 class python::dev {
 
-  include python
+  include ::python
 
-  package { "python-dev":
+  package { 'python-dev':
     ensure => present,
-    alias  => "python-devel",
-    name   => $operatingsystem ? {
-      /Debian|Ubuntu/ => "python-dev",
-      /RedHat|CentOS/ => "python-devel",
+    alias  => 'python-devel',
+    name   => $::osfamily ? {
+      'Debian' => 'python-dev',
+      'RedHat' => 'python-devel',
     },
   }
 
