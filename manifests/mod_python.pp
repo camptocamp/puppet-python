@@ -24,7 +24,7 @@ class python::mod_python {
     }
   }
 
-  apache::module { 'python':
+  apache_c2c::module { 'python':
     ensure  => present,
     require => Package['mod_python'],
   }
@@ -34,12 +34,12 @@ class python::mod_python {
     RedHat: {
       file { '/etc/httpd/conf.d/python.conf':
         ensure => absent,
-        before => Apache::Module['python'],
+        before => Apache_c2c::Module['python'],
       }
       file { '/etc/httpd/mods-available/python.load':
         ensure => present,
         source => 'puppet:///modules/python/httpd/python.load',
-        before => Apache::Module['python'],
+        before => Apache_c2c::Module['python'],
       }
 
     }
