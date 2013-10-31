@@ -5,7 +5,7 @@ class python::pip {
     ensure => present,
   }
 
-  if $::osfamily == 'RedHat' {
+  if $::osfamily == 'RedHat' and $::lsbmajdistrelease<6 {
     file {'/usr/bin/pip':
       ensure  => 'link',
       target  => '/usr/bin/pip-python',
