@@ -1,5 +1,8 @@
 # Python Puppet Module
 
+[![Puppet Forge](http://img.shields.io/puppetforge/v/camptocamp/python.svg)](https://forge.puppetlabs.com/camptocamp/python)
+[![Build Status](https://travis-ci.org/camptocamp/puppet-python.png?branch=master)](https://travis-ci.org/camptocamp/puppet-python)
+
 This module manages Python and pip on Debian/Redhat based systems.
 
 ## Basic usage
