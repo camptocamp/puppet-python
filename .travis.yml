@@ -2,13 +2,21 @@
 language: ruby
 bundler_args: --without development
 script: "bundle exec rake validate && bundle exec rake lint && bundle exec rake spec SPEC_OPTS='--format documentation'"
+after_success:
+  ["git clone -q git://github.com/puppetlabs/ghpublisher.git .forge-releng", ".forge-releng/publish"]
+env:
+  global:
+    - PUBLISHER_LOGIN=camptocamp
+    - secure: "Mj6wIfeI0gRkgAeeYP5qphoxmKmbjVWisw8FiKCygSj7iKnPdsYHVRu1I//Y
+hj2UMntig48dEh0h42hyBbLSamKOaGo79EYf+HX8HX8E0OYG3TsuWQvUH3YW
+sGBE4aCvpyiKDVrk1op0r+zxqLXyfFBNawA9nwHgUq+TMPoKfts="
 matrix:
   fast_finish: true
   include:
   - rvm: 1.8.7
-    env: PUPPET_GEM_VERSION="~> 2.7.0" FACTER_GEM_VERSION="~> 1.6.0"
+    env: PUPPET_GEM_VERSION="~> 2.7"
   - rvm: 1.8.7
-    env: PUPPET_GEM_VERSION="~> 2.7.0" FACTER_GEM_VERSION="~> 1.7.0"
+    env: PUPPET_GEM_VERSION="~> 3.0"
   - rvm: 1.9.3
     env: PUPPET_GEM_VERSION="~> 3.0"
   - rvm: 2.0.0
