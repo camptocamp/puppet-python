@@ -1,5 +1,5 @@
 class python::extras {
-  package {"ipython":
+  package {'ipython':
     ensure => present,
   }
 }

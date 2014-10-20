@@ -1,27 +1,27 @@
-/*
-
-== Class: python::mod_python
-
-Installs and enables mod_python for the apache web server.
-
-Requires:
-  Class['apache']
-
-Usage:
-  include apache
-  include python::mod_python
-
-*/
+#
+# == Class: python::mod_python
+#
+# Installs and enables mod_python for the apache web server.
+#
+# Requires:
+#   Class['apache']
+#
+# Usage:
+#   include apache
+#   include python::mod_python
+#
 class python::mod_python {
 
-  include python
+  include ::python
 
-  package { 'mod_python':
-    ensure => present,
-    name   => $::osfamily ? {
+  $mod_python_pkg = $::osfamily ? {
       Debian  => 'libapache2-mod-python',
       default => 'mod_python',
     }
+
+  package { 'mod_python':
+    ensure => present,
+    name   => $mod_python_pkg,
   }
 
   apache_c2c::module { 'python':
@@ -43,5 +43,7 @@ class python::mod_python {
       }
 
     }
+
+    default: { }
   }
 }
