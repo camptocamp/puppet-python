@@ -1,6 +1,6 @@
 {
   "name": "camptocamp-python",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "author": "DevOps Team / Camptocamp",
   "summary": "Camptocamp Python Module",
   "license": "GNU GPLv3",
@@ -9,6 +9,6 @@
   "issues_url": "https://github.com/camptocamp/puppet-python/issues",
   "description": "Python Module for Puppet",
   "dependencies": [
-  
+
   ]
 }
