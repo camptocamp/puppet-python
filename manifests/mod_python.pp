@@ -15,7 +15,7 @@ class python::mod_python {
   include ::python
 
   $mod_python_pkg = $::osfamily ? {
-      Debian  => 'libapache2-mod-python',
+      'Debian'  => 'libapache2-mod-python',
       default => 'mod_python',
     }
 
@@ -31,7 +31,7 @@ class python::mod_python {
 
   case $::osfamily {
 
-    RedHat: {
+    'RedHat': {
       file { '/etc/httpd/conf.d/python.conf':
         ensure => absent,
         before => Apache_c2c::Module['python'],
