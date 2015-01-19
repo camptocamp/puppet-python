@@ -8,7 +8,7 @@
 #
 class python::virtualenv {
 
-  include python::dev
+  include ::python::dev
 
   package { 'python-virtualenv':
     ensure => present,
