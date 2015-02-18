@@ -37,7 +37,7 @@ class python::mod_python {
         before => Apache_c2c::Module['python'],
       }
       file { '/etc/httpd/mods-available/python.load':
-        ensure => present,
+        ensure => file,
         source => 'puppet:///modules/python/httpd/python.load',
         before => Apache_c2c::Module['python'],
       }
