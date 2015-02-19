@@ -5,7 +5,7 @@ class python::pip {
     ensure => present,
   }
 
-  if $::osfamily == 'RedHat' and $::operatingsystemmajrelease<'6' {
+  if $::osfamily == 'RedHat' and versioncmp($::operatingsystemmajrelease, '6') < 0 {
     file {'/usr/bin/pip':
       ensure  => 'link',
       target  => '/usr/bin/pip-python',
