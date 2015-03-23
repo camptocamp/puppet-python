@@ -1,3 +1,8 @@
+## 2015-03-23 - Release 1.0.5
+
+- Various spec improvements
+- Linting
+
 ## 2015-01-04 - Release 1.0.4
 
 Fix unquoted strings in cases
