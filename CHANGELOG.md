@@ -1,3 +1,7 @@
+## 2015-03-24 - Release 1.0.6
+
+- Meta files update
+
 ## 2015-03-23 - Release 1.0.5
 
 - Various spec improvements
