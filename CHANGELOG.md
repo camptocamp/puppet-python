@@ -1,3 +1,7 @@
+## 2015-04-15 - Release 1.0.8
+
+- Use file() function instead of fileserver (way faster)
+
 ## 2015-04-03 - Release 1.0.7
 
 - Confine rspec pinning to ruby 1.8
