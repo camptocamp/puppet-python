@@ -10,7 +10,12 @@ class python::virtualenv {
 
   include ::python::dev
 
-  package { 'python-virtualenv':
+  $virtualenv_packages = $::lsbdistcodename ? {
+    'jessie' => ['python-virtualenv', 'virtualenv'],
+    default  => ['python-virtualenv'],
+  }
+
+  package { $virtualenv_packages:
     ensure => present,
   }
 }
