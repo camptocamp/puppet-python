@@ -1,14 +1,18 @@
+## 2015-05-20 - Release 1.1.0
+
+- Add package 'virtualenv' on Jessie
+
 ## 2015-05-13 - Release 1.0.11
 
-Add puppet-lint-file_source_rights-check gem
+- Add puppet-lint-file_source_rights-check gem
 
 ## 2015-05-12 - Release 1.0.10
 
-Don't pin beaker
+- Don't pin beaker
 
 ## 2015-04-27 - Release 1.0.9
 
-Add nodeset ubuntu-12.04-x86_64-openstack
+- Add nodeset ubuntu-12.04-x86_64-openstack
 
 ## 2015-04-15 - Release 1.0.8
 
