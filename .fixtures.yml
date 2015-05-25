@@ -1,0 +1,4 @@
+---
+fixtures:
+  symlinks:
+    python: "#{source_dir}"
