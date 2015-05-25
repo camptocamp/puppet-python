@@ -10,9 +10,10 @@ class python::virtualenv {
 
   include ::python::dev
 
-  $virtualenv_packages = $::lsbdistcodename ? {
-    'jessie' => ['python-virtualenv', 'virtualenv'],
-    default  => ['python-virtualenv'],
+  if $::osfamily == 'Debian' and versioncmp($::operatingsystemmajrelease, '8') >= 0 {
+    $virtualenv_packages = ['python-virtualenv', 'virtualenv']
+  } else {
+    $virtualenv_packages = 'python-virtualenv'
   }
 
   package { $virtualenv_packages:
