@@ -1,3 +1,7 @@
+## 2015-05-25 - Release 1.1.1
+
+Don't allow failure on Puppet 4
+
 ## 2015-05-20 - Release 1.1.0
 
 - Add package 'virtualenv' on Jessie
