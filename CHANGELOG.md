@@ -1,3 +1,7 @@
+## 2015-05-26 - Release 1.1.3
+
+add utopic & vivid nodesets
+
 ## 2015-05-25 - Release 1.1.2
 
 Add unit tests
