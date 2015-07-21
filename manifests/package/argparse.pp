@@ -5,7 +5,7 @@
 # === Example
 #
 # include python::package::argparse
-# Package <| alias == 'python-argparse' |>
+# realize Package['python-argparse']
 #
 class python::package::argparse {
 
@@ -16,7 +16,6 @@ class python::package::argparse {
   )
 
   @package {'python-argparse':
-    alias => 'python-argparse',
   }
 
 }

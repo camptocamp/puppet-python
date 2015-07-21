@@ -6,7 +6,7 @@
 #
 # include python::pip
 # include python::pip::pyes
-# Package <| alias == 'python-pyes' |>
+# realize Package['python-pyes']
 #
 class python::pip::pyes {
 
@@ -16,9 +16,9 @@ class python::pip::pyes {
     "Unsupported os family ${::osfamily}"
   )
 
-  @package {'pyes':
+  @package {'python-pyes':
     provider => 'pip',
-    alias    => 'python-pyes',
+    name     => 'python-pyes',
   }
 
 }

@@ -6,7 +6,7 @@
 #
 # include python::pip
 # include python::pip::couchdb
-# Package <| alias == 'python-couchdb' |>
+# realize Package['python-couchdb']
 #
 class python::pip::couchdb {
 
@@ -19,9 +19,9 @@ class python::pip::couchdb {
   # Workaround: added a SPACE in namevar to avoid duplicate declaration
   # with the service/package couchdb! Hoping that one day we can properly solve
   # this problem using e.g. composite name identifier
-  @package {' couchdb':
+  @package {'python-couchdb':
     provider => 'pip',
-    alias    => 'python-couchdb',
+    name     => 'couchdb',
   }
 
 }

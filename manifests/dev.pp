@@ -18,7 +18,6 @@ class python::dev {
 
   package { 'python-dev':
     ensure => present,
-    alias  => 'python-devel',
     name   => $pkg,
   }
 
