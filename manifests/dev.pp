@@ -16,9 +16,8 @@ class python::dev {
     'RedHat' => 'python-devel',
   }
 
-  package { 'python-dev':
+  package { 'python-devel':
     ensure => present,
-    alias  => 'python-devel',
     name   => $pkg,
   }
 
