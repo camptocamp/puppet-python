@@ -6,7 +6,7 @@
 #
 # include python::pip
 # include python::pip::simplejson
-# Package <| alias == 'python-simplejson' |>
+# realize Package['python-simplejson']
 #
 class python::pip::simplejson {
 
@@ -16,9 +16,9 @@ class python::pip::simplejson {
     "Unsupported os family ${::osfamily}"
   )
 
-  @package {'simplejson':
+  @package {'python-simplejson':
     provider => 'pip',
-    alias    => 'python-simplejson',
+    name     => 'simplejson',
   }
 
 }

@@ -5,7 +5,7 @@
 # === Example
 #
 # include python::package::simplejson
-# Package <| alias == 'python-simplejson' |>
+# realize Package['python-simplejson']
 #
 class python::package::simplejson {
 
@@ -16,7 +16,6 @@ class python::package::simplejson {
   )
 
   @package {'python-simplejson':
-    alias => 'python-simplejson',
   }
 
 }

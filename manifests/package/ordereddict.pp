@@ -5,7 +5,7 @@
 # === Example
 #
 # include python::package::ordereddict
-# Package <| alias == 'python-ordereddict' |>
+# realize Package['python-ordereddict']
 #
 class python::package::ordereddict {
 
@@ -16,7 +16,6 @@ class python::package::ordereddict {
   )
 
   @package {'python-ordereddict':
-    alias => 'python-ordereddict',
   }
 
 }

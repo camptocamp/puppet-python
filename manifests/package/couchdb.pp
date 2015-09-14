@@ -5,7 +5,7 @@
 # === Example
 #
 # include python::package::couchdb
-# Package <| alias == 'python-couchdb' |>
+# realize Package['python-couchdb']
 #
 class python::package::couchdb {
 
@@ -16,7 +16,6 @@ class python::package::couchdb {
   )
 
   @package {'python-couchdb':
-    alias => 'python-couchdb',
   }
 
 }
