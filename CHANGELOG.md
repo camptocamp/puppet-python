@@ -1,3 +1,8 @@
+## 2015-09-14 - Release 1.2.0
+
+Use namevar not alias
+Add Ubuntu 14.04 support
+
 ## 2015-08-21 - Release 1.1.7
 
 Use docker for acceptance tests
