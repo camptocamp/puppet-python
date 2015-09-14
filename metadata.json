@@ -30,7 +30,7 @@
     },
     {
       "operatingsystem": "Ubuntu",
-      "operatingsystemreleas": [
+      "operatingsystemrelease": [
         "14.04"
       ]
     }
