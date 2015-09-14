@@ -10,7 +10,7 @@ class python::virtualenv {
 
   include ::python::dev
 
-  if $::osfamily == 'Debian' and versioncmp($::operatingsystemmajrelease, '8') >= 0 {
+  if $::operatingsystem == 'Debian' and versioncmp($::operatingsystemmajrelease, '8') >= 0 {
     $virtualenv_packages = ['python-virtualenv', 'virtualenv']
   } else {
     $virtualenv_packages = 'python-virtualenv'

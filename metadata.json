@@ -27,6 +27,12 @@
         "6",
         "7"
       ]
+    },
+    {
+      "operatingsystem": "Ubuntu",
+      "operatingsystemreleas": [
+        "14.04"
+      ]
     }
   ]
 }
