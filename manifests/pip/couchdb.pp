@@ -21,7 +21,7 @@ class python::pip::couchdb {
   # this problem using e.g. composite name identifier
   @package {'python-couchdb':
     provider => 'pip',
-    name     => 'couchdb',
+    name     => ' couchdb',
   }
 
 }
