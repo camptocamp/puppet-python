@@ -1,3 +1,7 @@
+## 2015-09-22 - Release 1.2.1
+
+Readd space workaround in pip::couchdb
+
 ## 2015-09-14 - Release 1.2.0
 
 Use namevar not alias
