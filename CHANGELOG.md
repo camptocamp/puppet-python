@@ -1,3 +1,7 @@
+## 2017-11-20 - Release 1.2.2
+
+Add package invoke
+
 ## 2015-09-22 - Release 1.2.1
 
 Readd space workaround in pip::couchdb
