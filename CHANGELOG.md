@@ -1,3 +1,7 @@
+## 2017-11-21 - Release 1.2.3
+
+Fix python-pip install on Redhat
+
 ## 2017-11-20 - Release 1.2.2
 
 Add package invoke
